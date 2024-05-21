@@ -1,0 +1,13 @@
+Source: qgroundcontrol
+Maintainer: SWmail <debiansw@mail.ru>
+Section: misc
+Priority: optional
+Build-Depends: debhelper-compat (= 12), build-essential, ccache, cmake, cppcheck, file, g++, gcc, gdb, git, libfuse2, make, ninja-build, rsync, binutils, locales, patchelf, libxcb-xinerama0, libxkbcommon-x11-0, libxcb-cursor0, libsdl2-dev, libspeechd2, flite, speech-dispatcher, speech-dispatcher-flite, libgstreamer1.0-dev, libgstreamer-plugins-base1.0-dev, libgstreamer-plugins-good1.0-dev, libgstreamer-plugins-bad1.0-dev, gstreamer1.0-plugins-base, gstreamer1.0-plugins-good, gstreamer1.0-plugins-bad, gstreamer1.0-plugins-ugly, gstreamer1.0-plugins-rtp, gstreamer1.0-libav, gstreamer1.0-tools, gstreamer1.0-x, gstreamer1.0-alsa, gstreamer1.0-gl, gstreamer1.0-gtk3, gstreamer1.0-gl, gstreamer1.0-vaapi, gstreamer1.0-rtsp, libdrm-dev
+Standards-Version: 5.0
+Homepage: http://qgroundcontrol.com/
+
+Package: qgroundcontrol
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: QGroundControl (QGC) is the Graphical User Interface (GUI) for ArduSub, which provides setup and control functionality.
+ QGroundControl provides full flight control and configuration for ArduPilot or PX4 Pro powered vehicles. The goal for QGroundControl is improved ease of use for new users as well as high end feature support for experienced users.
